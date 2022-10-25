@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <header>Weather Dashboard</header>
+    <!-- contains both major columns -->
+    <div class="container">
+      <div class="row">
+        <!-- makes sure both columns are in a row -->
+
+        <!-- left column for search bar and history -->
+        <div class="col-3 m-3 search-box">
+          <p class="search">Search for a City:</p>
+          <!-- form and button -->
+          <div class="formInput row ml-3" id="formInput">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter a city"
+                id="search-city"
+              />
+              <div class="input-group-append">
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  id="btn-search"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
+            <!-- clear button  -->
+            <button
+              type="button"
+              class="btn btn-primary btn-md border-1"
+              id="btn-clear"
+            >
+              Clear History
+            </button>
+          </div>
+          <!-- search history -->
+          <div class="list-group" id="historic-cities">
+            <a href="#" class="list-group-item list-group-item-action"
+              >City 1</a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              >City 2</a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              >City 3</a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              >City 4</a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              >City 5</a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              >City 6</a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              >City 7</a
+            >
+          </div>
+        </div>
+        <!-- right column for target city info -->
+        <div class="col-8">
+          <div class="row m-3" id="targetCity">
+            <!-- column that take up entire space of above div, to hold name & date -->
+            <div class="col-12">
+              <h2 id="city-name"></h2>
+              <h2 id="city-date"></h2>
+            </div>
+            <!-- column underneath city name and date to show weather info -->
+            <div class="weather-info">
+              <p id="temp"></p>
+              <p id="humidity"></p>
+              <p id="wind"></p>
+              <p>UV Index: <span id="uv"></span></p>
+            </div>
+          </div>
+          <!-- start of 5 day forecast -->
+          <div class="row" id="forecast">
+            <h2 class="col-12">5 Day Forecast</h2>
+          </div>
+          <div class="container text-center hide" id="forecast-cards">
+            <div class="row align-items-start">
+              <!-- cards for each day of forecast -->
+              <div class="col card">
+                <p class="mt-2 mb-0 forecast-date">10/10/22</p>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" />
+                <p class="mt-0 mb-0 forecast-temp">Temp: 58°F</p>
+                <p class="forecast-humidity">Humidity: 48%</p>
+              </div>
+              <div class="col card">
+                <p class="mt-2 mb-0 forecast-date">10/10/22</p>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" />
+                <p class="mt-0 mb-0 forecast-temp">Temp: 58°F</p>
+                <p class="forecast-humidity">Humidity: 48%</p>
+              </div>
+              <div class="col card">
+                <p class="mt-2 mb-0 forecast-date">10/10/22</p>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" />
+                <p class="mt-0 mb-0 forecast-temp">Temp: 58°F</p>
+                <p class="forecast-humidity">Humidity: 48%</p>
+              </div>
+              <div class="col card">
+                <p class="mt-2 mb-0 forecast-date">10/10/22</p>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" />
+                <p class="mt-0 mb-0 forecast-temp">Temp: 58°F</p>
+                <p class="forecast-humidity">Humidity: 48%</p>
+              </div>
+              <div class="col card">
+                <p class="mt-2 mb-0 forecast-date">10/10/22</p>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" />
+                <p class="mt-0 mb-0 forecast-temp">Temp: 58°F</p>
+                <p class="forecast-humidity">Humidity: 48%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/c6386d3a21.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/javascript/ script.js"></script>
+  </body>
+  <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+</html>

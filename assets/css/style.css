@@ -1,0 +1,136 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  background-color: #ebeaef;
+}
+
+/* style for header */
+header {
+  background: linear-gradient(to left, #e66465, #9198e5);
+  padding: 4px;
+  text-align: center;
+  font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 50px;
+  color: #ebeaef;
+}
+
+/* styling for each container */
+.container {
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* .body-text {
+  margin-left: 250px;
+  padding-top: 20px;
+  padding-left: 20px;
+} */
+
+.list-group {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.list-group-item {
+  background-color: #9198e5;
+  color: white;
+  border-color: #e6646440;
+  border-top-width: 3px;
+  border-left-width: 3px;
+  border-right-width: 3px;
+}
+
+#forecast {
+  margin-left: 1rem;
+}
+
+#historic-cities {
+  margin: 10px;
+  text-align: center;
+}
+
+.search {
+  margin-bottom: 5px;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+#search-city {
+  width: 259px;
+  height: 43px;
+  margin-left: -6px;
+}
+
+#targetCity {
+  width: 95%;
+  background-color: #9198e54c;
+  border-style: solid;
+  border-color: #e6646453;
+  border-radius: 8px;
+  border-width: 8px;
+}
+
+.col-8 {
+  margin-left: 40px;
+}
+
+.weather-info {
+  margin-left: 20px;
+}
+
+.card {
+  border-style: solid;
+  margin: 10px;
+  height: 230px;
+  background-color: #9198e5;
+  border-style: solid;
+  border-color: #e6646440;
+  border-width: 10px;
+}
+
+.forecast-date {
+  font-size: 16px;
+  color: white;
+}
+
+.forecast-temp,
+.forecast-humidity {
+  color: white;
+}
+
+.search-box {
+  background-color: #9198e54c;
+  border-style: solid;
+  border-color: #e6646453;
+  border-width: 8px;
+  border-radius: 8px;
+}
+
+#btn-search {
+  background-color: #e66465;
+  border-color: #e66465;
+  margin-right: 15px;
+}
+
+#btn-clear {
+  margin-top: 10px;
+  background-color: #e66465;
+  border-color: #e66465;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+#city-name,
+#city-date {
+  display: inline;
+}
