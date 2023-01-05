@@ -6,7 +6,7 @@ This application is a weather dashboard that uses the OpenWeather API to retriev
 
 ### Links
 
-Deployed Site URL: []
+Deployed Site URL: [https://haleymay21.github.io/Challenge6-Weather/]
 
 #### Screenshot
 
