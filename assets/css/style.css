@@ -23,12 +23,6 @@ header {
   width: 100%;
 }
 
-/* .body-text {
-  margin-left: 250px;
-  padding-top: 20px;
-  padding-left: 20px;
-} */
-
 .list-group {
   display: flex;
   flex-direction: column;
@@ -120,6 +114,7 @@ header {
   margin-top: 10px;
   background-color: #e66465;
   border-color: #e66465;
+  margin-bottom: 20px;
 }
 
 .hide {
@@ -133,4 +128,47 @@ header {
 #city-name,
 #city-date {
   display: inline;
+}
+
+img {
+  height: 80px;
+  width: 80px;
+  align-items: center;
+}
+
+.date {
+  margin-top: 12px;
+}
+
+.date,
+.temp,
+.humidity,
+.wind {
+  color: white;
+}
+
+.future {
+  max-width: 170px;
+  padding-left: 34px;
+  min-height: 280px;
+}
+
+.historyBtns {
+  background-color: #9198e5;
+  color: #ebeaef;
+  margin-bottom: 12px;
+  padding: 9px;
+  border-radius: 10px;
+  border-style: none;
+  font-size: 18px;
+  max-width: 250px;
+  margin-left: 35px;
+}
+
+.historyBtns:hover {
+  background-color: #e66464b4;
+}
+
+#city-name {
+  margin-top: 50px;
 }

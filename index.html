@@ -54,29 +54,7 @@
             </button>
           </div>
           <!-- search history -->
-          <div class="list-group" id="historic-cities">
-            <a href="#" class="list-group-item list-group-item-action"
-              >City 1</a
-            >
-            <a href="#" class="list-group-item list-group-item-action"
-              >City 2</a
-            >
-            <a href="#" class="list-group-item list-group-item-action"
-              >City 3</a
-            >
-            <a href="#" class="list-group-item list-group-item-action"
-              >City 4</a
-            >
-            <a href="#" class="list-group-item list-group-item-action"
-              >City 5</a
-            >
-            <a href="#" class="list-group-item list-group-item-action"
-              >City 6</a
-            >
-            <a href="#" class="list-group-item list-group-item-action"
-              >City 7</a
-            >
-          </div>
+          <div class="list-group history"></div>
         </div>
         <!-- right column for target city info -->
         <div class="col-8">
@@ -85,13 +63,14 @@
             <div class="col-12">
               <h2 id="city-name"></h2>
               <h2 id="city-date"></h2>
+              <div id="icon1"></div>
             </div>
             <!-- column underneath city name and date to show weather info -->
             <div class="weather-info">
               <p id="temp"></p>
               <p id="humidity"></p>
               <p id="wind"></p>
-              <p>UV Index: <span id="uv"></span></p>
+              <p id="uvIndex" class="hide">UV Index: <span id="uv"></span></p>
             </div>
           </div>
           <!-- start of 5 day forecast -->
@@ -99,39 +78,7 @@
             <h2 class="col-12">5 Day Forecast</h2>
           </div>
           <div class="container text-center hide" id="forecast-cards">
-            <div class="row align-items-start">
-              <!-- cards for each day of forecast -->
-              <div class="col card">
-                <p class="mt-2 mb-0 forecast-date">10/10/22</p>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" />
-                <p class="mt-0 mb-0 forecast-temp">Temp: 58°F</p>
-                <p class="forecast-humidity">Humidity: 48%</p>
-              </div>
-              <div class="col card">
-                <p class="mt-2 mb-0 forecast-date">10/10/22</p>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" />
-                <p class="mt-0 mb-0 forecast-temp">Temp: 58°F</p>
-                <p class="forecast-humidity">Humidity: 48%</p>
-              </div>
-              <div class="col card">
-                <p class="mt-2 mb-0 forecast-date">10/10/22</p>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" />
-                <p class="mt-0 mb-0 forecast-temp">Temp: 58°F</p>
-                <p class="forecast-humidity">Humidity: 48%</p>
-              </div>
-              <div class="col card">
-                <p class="mt-2 mb-0 forecast-date">10/10/22</p>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" />
-                <p class="mt-0 mb-0 forecast-temp">Temp: 58°F</p>
-                <p class="forecast-humidity">Humidity: 48%</p>
-              </div>
-              <div class="col card">
-                <p class="mt-2 mb-0 forecast-date">10/10/22</p>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" />
-                <p class="mt-0 mb-0 forecast-temp">Temp: 58°F</p>
-                <p class="forecast-humidity">Humidity: 48%</p>
-              </div>
-            </div>
+            <div class="row align-items-start" id="5DayForecast"></div>
           </div>
         </div>
       </div>
